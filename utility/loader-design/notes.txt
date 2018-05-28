@@ -1,0 +1,9 @@
+standard-grey-blue : #004a7c
+strong-light-blue : #10ade4
+light-grey-blue : #e3eff5
+strong-blue : #2754ba
+
+TIME = 1s //2s, 4s
+SPEED_CURVE = ease, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n)
+
+animation: spin TIME SPEED_CURVE infinite
