@@ -1,0 +1,7 @@
+.PageNav {
+  background-color: rgb(227, 239, 245);
+}
+
+.PageNav ul li{
+  display: inline;
+}
