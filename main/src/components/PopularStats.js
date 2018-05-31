@@ -8,7 +8,7 @@ class PopularStats extends React.Component {
   render() {
     return (
       <div className="PopularStats">
-        <h3>Popular Stats</h3>
+        <h1>Popular Stats</h1>
         <MarketPriceUSD />
         <AverageBlockSize />
         <TransactionsPerDay />

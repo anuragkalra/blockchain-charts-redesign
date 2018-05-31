@@ -24,8 +24,8 @@ class AverageBlockSize extends React.Component {
   render() {
     return (
       <div className='AverageBlockSize'>
-        <h2>Average Block Size</h2>
-        <h1>{this.state.averageBlockSize}</h1>
+        <h3>Average Block Size</h3>
+        <h2>{this.state.averageBlockSize}</h2>
         <p>Megabytes</p>
       </div>
     );

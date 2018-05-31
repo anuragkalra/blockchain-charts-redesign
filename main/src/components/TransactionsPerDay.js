@@ -23,8 +23,8 @@ class TransactionsPerDay extends React.Component {
   render() {
     return (
       <div className='TransactionsPerDay'>
-        <h2>Transactions per Day</h2>
-        <h1>{this.state.transactionsPerDay}</h1>
+        <h3>Transactions per Day</h3>
+        <h2>{this.state.transactionsPerDay}</h2>
         <p>Transactions</p>
       </div>
     );
