@@ -1,6 +1,8 @@
 import React from 'react';
 import BitcoinsInCirculation from './BitcoinsInCirculation';
 import MarketPriceUSDChart from './MarketPriceUSDChart';
+import MarketCapitalizationChart from './MarketCapitalizationChart';
+import USDExchangeTradeVolumeChart from './USDExchangeTradeVolumeChart';
 
 import './CurrencyStatistics.css';
 
@@ -11,8 +13,8 @@ class CurrencyStatistics extends React.Component {
         <h1>Currency Statistics</h1>
         <BitcoinsInCirculation />
         <MarketPriceUSDChart />
-        <h2>Market Capitalization</h2>
-        <h2>USD Exchange Trade Volume</h2>
+        <MarketCapitalizationChart />
+        <USDExchangeTradeVolumeChart />
       </div>
     );
   }
