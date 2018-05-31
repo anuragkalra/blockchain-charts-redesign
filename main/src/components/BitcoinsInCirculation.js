@@ -16,7 +16,7 @@ class BitcoinsInCirculation extends React.Component {
     fetch(url)
       .then(response => response.json())
       .then(result => {
-        let pt1 = result.values[1];
+        let pt1 = result.values[0];
         let pt2 = result.values.pop();
         this.setState({
           x1 : pt1.x,
