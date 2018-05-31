@@ -5,7 +5,13 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="Nav">
-        Blockchain
+        <ul>
+          <li>Blockchain</li>
+          <li>Wallet</li>
+          <li>Data</li>
+          <li>Api</li>
+          <li>About</li>
+        </ul>
       </div>
     );
   }

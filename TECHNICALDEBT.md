@@ -3,8 +3,10 @@
 1. Refactoring: BitcoinsInCirculation => BitcoinsInCirculationChart
 2. Refactoring: move all of {BitcoinsInCirculationChart, MarketPriceUSDChart, MarketCapitalizationChart, USDExchangeTradeVolumeChart} into components/charts/
 3. Add Blockchain favicon to index.html
-
-   3.1. Get blockchain favicon in .ico format => blockchain.ico
-   3.2 Save in assets
-   3.3. Link to file in index.html
-    ```<link rel="shortcut icon" href="%PUBLIC_URL%/blockchain.ico">```
+  * Get blockchain favicon in .ico format => blockchain.ico   
+  * Save in assets
+  * Link to file in index.html
+    + ```<link rel="shortcut icon" href="%PUBLIC_URL%/blockchain.ico">```
+4. Refactoring label implementation
+  * Copy labels to label.json
+  * Reference label.json for any text labels throughout application

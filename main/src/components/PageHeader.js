@@ -5,7 +5,8 @@ class PageHeader extends React.Component {
   render() {
     return (
       <div className='PageHeader'>
-        Blockchain Charts
+        <h1>Blockchain Charts</h1>
+        <p>The most trusted source for data on the bitcoin blockchain.</p>
       </div>
     );
   }

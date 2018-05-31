@@ -2,6 +2,16 @@
   background-color: rgb(227, 239, 245);
 }
 
-.PageNav ul li{
-  display: inline;
+ul {
+    list-style-type: none;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+ul > li {
+    -webkit-flex: 1 1 33%;
+    flex: 1 1 33%;
+    white-space: nowrap;
 }
