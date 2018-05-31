@@ -26,7 +26,9 @@ class MarketPriceUSD extends React.Component {
 
     return (
       <div className='MarketPriceUSD'>
-        Market Price is {this.state.marketPrice}
+        <h2>Market Price (USD)</h2>
+        <h1>{this.state.marketPrice}</h1>
+        <p>USD</p>
       </div>
     );
   }
