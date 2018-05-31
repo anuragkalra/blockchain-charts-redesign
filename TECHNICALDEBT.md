@@ -10,3 +10,4 @@
 4. Refactoring label implementation
   * Copy labels to label.json
   * Reference label.json for any text labels throughout application
+5. Dependency issue with ```yarn start```. Works on local machine but fails on MacBook pro {insert OS X version}. Works with ```npm start```.
