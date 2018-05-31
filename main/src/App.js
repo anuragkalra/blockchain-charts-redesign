@@ -5,7 +5,6 @@ import PageHeader from './components/PageHeader';
 import PageNav from './components/PageNav';
 import PopularStats from './components/PopularStats';
 import CurrencyStatistics from './components/CurrencyStatistics';
-import LoaderAnimation from './components/LoaderAnimation';
 
 class App extends React.Component {
   render() {
