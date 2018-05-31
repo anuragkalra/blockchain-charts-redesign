@@ -3,9 +3,7 @@ import './App.css';
 import Nav from './components/Nav'
 import PageHeader from './components/PageHeader';
 import PageNav from './components/PageNav';
-import MarketPriceUSD from './components/MarketPriceUSD';
-import AverageBlockSize from './components/AverageBlockSize';
-import TransactionsPerDay from './components/TransactionsPerDay';
+import PopularStats from './components/PopularStats';
 import LoaderAnimation from './components/LoaderAnimation';
 
 class App extends React.Component {
@@ -15,10 +13,7 @@ class App extends React.Component {
         <Nav />
         <PageHeader />
         <PageNav />
-        <MarketPriceUSD />
-        <LoaderAnimation />
-        <AverageBlockSize />
-        <TransactionsPerDay />
+        <PopularStats />
       </div>
     );
   }
