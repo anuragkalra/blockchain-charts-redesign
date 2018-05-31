@@ -1,0 +1,2 @@
+1. Refactoring: BitcoinsInCirculation => BitcoinsInCirculationChart
+2. Refactoring: move all of {BitcoinsInCirculationChart, MarketPriceUSDChart, MarketCapitalizationChart, USDExchangeTradeVolumeChart} into components/charts/
