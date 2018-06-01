@@ -25,8 +25,10 @@ class MarketPriceUSD extends React.Component {
     return (
       <div className='MarketPriceUSD'>
         <h3>Market Price (USD)</h3>
-        <h2>${this.state.marketPrice}</h2>
-        <p>USD</p>
+        <span>
+          <h2>${this.state.marketPrice}</h2>
+          <p>USD</p>
+        </span>
         <h6>Average USD market price across major bitcoin exchanges.</h6>
       </div>
     );

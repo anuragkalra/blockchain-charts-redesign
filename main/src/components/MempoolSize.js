@@ -25,8 +25,10 @@ class MempoolSize extends React.Component {
     return (
       <div className='MempoolSize'>
         <h3>Mempool Size</h3>
-        <h2>{this.state.mempoolSize}</h2>
-        <p>Bytes</p>
+        <span>
+          <h2>{this.state.mempoolSize}</h2>
+          <p>Bytes</p>
+        </span>        
         <h6>The aggregate size of transactions waiting to be confirmed.</h6>
       </div>
     );

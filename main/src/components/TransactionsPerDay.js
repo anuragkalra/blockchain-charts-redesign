@@ -25,8 +25,10 @@ class TransactionsPerDay extends React.Component {
     return (
       <div className='TransactionsPerDay'>
         <h3>Transactions per Day</h3>
-        <h2>{this.state.transactionsPerDay}</h2>
-        <p>Transactions</p>
+        <span>
+          <h2>{this.state.transactionsPerDay}</h2>
+          <p>Transactions</p>
+        </span>        
         <h6>The aggregate number of confirmed Bitcoin transactions in the past 24 hours.</h6>
       </div>
     );
