@@ -15,7 +15,7 @@ class MempoolSize extends React.Component {
       .then(result => {
         let mps = result.values.pop().y;
         this.setState({
-          mempoolSize : mps
+          mempoolSize : mps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")  //adds comma
         });
       })
   }

@@ -9,10 +9,12 @@ class PopularStats extends React.Component {
     return (
       <div className="PopularStats">
         <h1>Popular Stats</h1>
-        <MarketPriceUSD />
-        <AverageBlockSize />
-        <TransactionsPerDay />
-        <MempoolSize />
+        <div className="row">
+          <MarketPriceUSD />
+          <AverageBlockSize />
+          <TransactionsPerDay />
+          <MempoolSize />
+        </div>      
       </div>
     );
   }

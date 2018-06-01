@@ -15,7 +15,7 @@ class TransactionsPerDay extends React.Component {
       .then(result => {
         let tpd = result.values.pop().y;
         this.setState({
-          transactionsPerDay : tpd
+          transactionsPerDay : tpd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") //adds comma
         });
       })
   }

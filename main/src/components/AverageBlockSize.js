@@ -16,7 +16,7 @@ class AverageBlockSize extends React.Component {
       .then(result => {
         let mp = result.values.pop().y;
         this.setState({
-          averageBlockSize : mp
+          averageBlockSize : mp.toFixed(2)
         });
       })
   }

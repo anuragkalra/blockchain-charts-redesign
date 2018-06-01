@@ -16,7 +16,7 @@ class MarketPriceUSD extends React.Component {
       .then(result => {
         let mp = result.values.pop().y;
         this.setState({
-          marketPrice : mp
+          marketPrice : mp.toFixed(2)
         });
       })
   }

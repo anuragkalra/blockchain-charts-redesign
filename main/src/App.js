@@ -10,11 +10,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Nav />
-        <PageHeader />
-        <PageNav />
-        <PopularStats />
-        <CurrencyStatistics />
+        <div className="wrapper">
+          <Nav />
+          <PageHeader />
+          <PageNav />
+          <div className="container">
+            <PopularStats/>
+          </div>
+          <CurrencyStatistics />
+        </div>
       </div>
     );
   }
