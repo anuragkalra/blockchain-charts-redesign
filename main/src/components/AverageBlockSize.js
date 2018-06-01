@@ -12,11 +12,20 @@ class AverageBlockSize extends React.Component {
   componentDidMount() {
     const url = 'https://api.blockchain.info/charts/avg-block-size?format=json&cors=true';
     fetch(url)
-      .then(response => response.json())
-      .then(result => {
-        let mp = result.values.pop().y;
+      .then(response => {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        }
+        return response.json();
+      }).then(result => {
+        let abs = result.values.pop().y;
         this.setState({
-          averageBlockSize : mp.toFixed(2)
+          averageBlockSize : abs.toFixed(2)
+        });
+      }).catch(error => {
+        console.log(error);
+        this.setState({
+          averageBlockSize : 'unavailable!'
         });
       })
   }
@@ -28,7 +37,7 @@ class AverageBlockSize extends React.Component {
         <span>
           <h2>{this.state.averageBlockSize}</h2>
           <p>Megabytes</p>
-        </span>        
+        </span>
         <h6>The 24 hour average block size in MB.</h6>
       </div>
     );
