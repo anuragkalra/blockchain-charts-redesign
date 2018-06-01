@@ -9,17 +9,12 @@ class MarketPriceUSDChart extends React.Component {
         labels : [],
         datasets : [{
           label : 'market-price-usd',
+          borderColor: 'rgba(0, 74, 124, 0.8)',
+          backgroundColor: 'rgba(0, 74, 124, 0.2)',
           data : null
         }]
       }
     };
-  }
-
-  handleErrors(response) {
-    if (!response.ok) {
-        throw Error(response.statusText);
-    }
-    return response;
   }
 
   componentDidMount(){
@@ -30,16 +25,14 @@ class MarketPriceUSDChart extends React.Component {
           throw Error(response.statusText);
         }
         return response.json();
-      }).then(response => {
-        let xValues = response.values.map(e => e.x.toString());
-        let yValues = response.values.map(e => e.y);
+      }).then(result => {
+        let xValues = result.values.map(e => e.x.toString());
+        let yValues = result.values.map(e => e.y);
         this.setState({
           chartData : {
             labels : xValues,
             datasets : [{
               label : 'market-price-usd',
-              borderColor: 'rgba(0, 74, 124, 0.8)',
-              backgroundColor: 'rgba(0, 74, 124, 0.2)',
               data : yValues
             }]
           }
@@ -52,7 +45,6 @@ class MarketPriceUSDChart extends React.Component {
   render() {
     return (
       <div className="MarketPriceUSDChart">
-        {this.state.mostRecent}
         <Line
           data={this.state.chartData}
           options={{
