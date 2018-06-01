@@ -14,7 +14,7 @@ class App extends React.Component {
           <Nav />
           <PageHeader />
           <PageNav />
-          <div className="container">
+          <div className="container-fluid">
             <PopularStats/>
           </div>
           <CurrencyStatistics />
