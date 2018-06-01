@@ -1,5 +1,5 @@
 import React from 'react';
-//let statistics = require('blockchain.info/statistics');
+import './AverageBlockSize.css';
 
 class AverageBlockSize extends React.Component {
   constructor() {
@@ -27,6 +27,7 @@ class AverageBlockSize extends React.Component {
         <h3>Average Block Size</h3>
         <h2>{this.state.averageBlockSize}</h2>
         <p>Megabytes</p>
+        <h6>The 24 hour average block size in MB.</h6>
       </div>
     );
   }

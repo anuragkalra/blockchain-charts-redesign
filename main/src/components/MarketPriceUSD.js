@@ -1,5 +1,5 @@
 import React from 'react';
-//let statistics = require('blockchain.info/statistics');
+import './MarketPriceUSD.css';
 
 class MarketPriceUSD extends React.Component {
   constructor() {
@@ -25,8 +25,9 @@ class MarketPriceUSD extends React.Component {
     return (
       <div className='MarketPriceUSD'>
         <h3>Market Price (USD)</h3>
-        <h2>{this.state.marketPrice}</h2>
+        <h2>${this.state.marketPrice}</h2>
         <p>USD</p>
+        <h6>Average USD market price across major bitcoin exchanges.</h6>
       </div>
     );
   }

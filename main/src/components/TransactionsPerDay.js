@@ -1,4 +1,5 @@
 import React from 'react';
+import './TransactionsPerDay.css';
 
 class TransactionsPerDay extends React.Component {
   constructor() {
@@ -26,6 +27,7 @@ class TransactionsPerDay extends React.Component {
         <h3>Transactions per Day</h3>
         <h2>{this.state.transactionsPerDay}</h2>
         <p>Transactions</p>
+        <h6>The aggregate number of confirmed Bitcoin transactions in the past 24 hours.</h6>
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './MempoolSize.css';
 
 class MempoolSize extends React.Component {
   constructor() {
@@ -26,6 +27,7 @@ class MempoolSize extends React.Component {
         <h3>Mempool Size</h3>
         <h2>{this.state.mempoolSize}</h2>
         <p>Bytes</p>
+        <h6>The aggregate size of transactions waiting to be confirmed.</h6>
       </div>
     );
   }
