@@ -22,8 +22,6 @@ class MarketPriceUSD extends React.Component {
   }
 
   render() {
-    //fetch(url).then(r => console.log(r));
-
     return (
       <div className='MarketPriceUSD'>
         <h3>Market Price (USD)</h3>
