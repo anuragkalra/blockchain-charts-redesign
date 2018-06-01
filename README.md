@@ -6,7 +6,7 @@ Redesign/Reimplementation of https://blockchain.info/charts
 
 ### Prerequisites
 
-This project requires node.js to run
+This project requires npm to run
 
 ### Installing
 
@@ -19,6 +19,7 @@ $ git clone https://github.com/anuragkalra/blockchain-charts-redesign.git
 Enter project directory
 
 ```
+$ cd blockchain-charts-redesign
 $ cd main
 ```
 
@@ -35,11 +36,6 @@ $ npm start
 ```
 
 View running project on localhost:3000
-
-## Running the tests
-
-Explain how to run the automated tests for this system. Need to do...
-
 
 ## Built With
 
