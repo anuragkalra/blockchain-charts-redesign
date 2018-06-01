@@ -31,7 +31,7 @@ $ npm install
 Start server
 
 ```
-$ yarn start
+$ npm start
 ```
 
 View running project on localhost:3000
