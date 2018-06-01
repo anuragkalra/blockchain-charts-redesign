@@ -12,11 +12,20 @@ class MempoolSize extends React.Component {
   componentDidMount() {
     const url = 'https://api.blockchain.info/charts/mempool-size?format=json&cors=true';
     fetch(url)
-      .then(response => response.json())
-      .then(result => {
+      .then(response => {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        }
+        return response.json();
+      }).then(result => {
         let mps = result.values.pop().y;
         this.setState({
           mempoolSize : mps.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")  //adds comma
+        });
+      }).catch(error => {
+        console.log(error);
+        this.setState({
+          mempoolSize : 'unavailable!'
         });
       })
   }
@@ -28,7 +37,7 @@ class MempoolSize extends React.Component {
         <span>
           <h2>{this.state.mempoolSize}</h2>
           <p>Bytes</p>
-        </span>        
+        </span>
         <h6>The aggregate size of transactions waiting to be confirmed.</h6>
       </div>
     );
