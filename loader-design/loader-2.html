@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #10ade4; /*strong-light-blue*/
+  border-bottom: 16px solid #004a7c; /*standard-grey-blue*/
+  border-right: 16px solid #e3eff5; /*light-grey-blue*/
+  border-left: 16px solid #2754ba;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+</style>
+</head>
+<body style="margin:0;">
+
+<div id="loader"></div>
+
+
+<script>
+</script>
+
+</body>
+</html>
